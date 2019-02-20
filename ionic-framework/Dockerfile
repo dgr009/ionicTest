@@ -68,5 +68,6 @@ RUN cd myApp && \
     ionic cordova build android --prod --no-interactive --release
 
 WORKDIR myApp
+VOLUME /myApp
 EXPOSE 8100 35729
-CMD ["ionic", "serve"]
+CMD ["ionic", "serve", "--lab"]
